@@ -23,7 +23,8 @@ body{
     text-align: center;
     z-index: 9999;
     display: block;
-
+    border-bottom: 2px solid white;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
 
 }
 .textHeader{
@@ -56,97 +57,11 @@ i .fa-address-card{
 .coté_gauche{
     background-color: #e60012;
     width: 10%;
-    height: 99vh;
+    height: 100vh;
     margin-top: 0;
 }
-/* Slider */
-.img
-{
-    display: inline-block;
-    float: left;
-    background: #2c75ff;
-    margin-left: 10%;
-    margin-top: 100px;
-    width: 70%;
-    height: 100vh;
-    overflow: hidden;
-}
 
-.zoom-out
-{
-    border: 1px solid white;
-    transform: scale(1);
-    transition: .4s ease-in-out;
-}
-
-.zoom-out:hover
-{
-    transform: scale(0.95);
-}
-
-.img-haut-g
-{
-    float: left;
-    width: 50%;
-    height: 50vh;
-}
-
-.img-haut-d
-{
-    float: right;
-    width: 49.4%;
-    height: 50vh;
-}
-
-.img-bas
-{
-    width: 100%;
-    height: 50vh;
-}
-
-figure
-{
-    display: inline-block;
-    margin: 0;
-}
-                                /*** SLIDER romain***/
-
-
-div#slider img
-{
-    border-left: none;
-    border-right: none;
-    width: 20%;
-    height: auto;
-    float: left;
-}
-
-div#slider
-{
-    clear: both;
-    position: relative;
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    left: 0;
-    text-align: left;
-    animation: 20s slidy infinite;
-    height: 100%;
-}
-
-@keyframes slidy
-{
-    0% { left: 0; }
-    20% { left: 0; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    100% { left: -300%; }
-}
-                                /*PICTOGRAMMES fin slider Romain*/
+/*PICTOGRAMMES*/
 
 .fa-plane{                   /*avion*/
     font-size: 8vh;
@@ -184,7 +99,7 @@ div#slider
 .fa-connectdevelop:active{transform: scale(0.8,0.8);}
 .fa-connectdevelop:hover{color: rgba(171, 0, 20, 0.7);transition: color 0.7s;}
 
-p{text-align: justify;margin: 4%;color: black;font-family: 'Montserrat', sans-serif, sans-serif;}       /*text HOVER*/
+p{text-align: justify;margin: 3%;color: black;font-family: 'Montserrat', sans-serif, sans-serif;}       /*text HOVER*/
 p:hover{color:white;transition: color 0.7s;}
 
 /* (coté droit) ARTICLES*/
@@ -205,18 +120,19 @@ p:hover{color:white;transition: color 0.7s;}
     border-left:4px solid #a1b6cb;}
 
 
-.article1:hover{background-color:#2c75ff ;transition: background-color 0.5s ease-in-out;}
+.article1:hover{background-color: #2c75ff;transition: background-color 0.5s ease-in-out;}
 .article2:hover{background-color:#2c75ff ;transition: background-color 0.5s ease-in-out;}
 .article3:hover{background-color:#2c75ff ;transition: background-color 0.5s ease-in-out;}       /*articles HOVER*/
 
 /* (coté droite) IMAGE ARTICLES*/
+
 #imgArticle1{
     height: 10vh;
     width:16%;
     float: left;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 10px;
-    margin-right: 4%;
+    margin-right: 2%;
     cursor: pointer;
     display: inline-block;
     background-image: url("images/image1.jpg");
@@ -227,9 +143,9 @@ p:hover{color:white;transition: color 0.7s;}
     height: 10vh;
     width: 16%;
     float: left;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 10px;
-    margin-right: 4%;
+    margin-right: 2%;
     cursor: pointer;
     display: inline-block;
     background-image: url("images/image2.jpg");
@@ -240,9 +156,9 @@ p:hover{color:white;transition: color 0.7s;}
     height: 10vh;
     width: 16%;
     float: left;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 10px;
-    margin-right: 4%;
+    margin-right: 2%;
     cursor: pointer;
     display: inline-block;
     background-image: url("images/image3.jpg");
@@ -262,4 +178,23 @@ p:hover{color:white;transition: color 0.7s;}
     width: 60%;
     height: 100vh;
     background-color: #2c75ff;
+}
+
+
+div>#vidéo
+{
+    margin-top: 3%;
+    margin-left:10%;
+    position: absolute;
+}
+
+#text
+{
+
+    width: 60%;
+    height: auto;
+    margin-top:35%;
+    margin-left: 10%;
+    position:absolute;
+
 }

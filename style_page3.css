@@ -17,17 +17,18 @@ body{
 }
 /* HEADER + Nom du site*/
 .header{
-    background-color: #e60012;
+    background-color: #808080;
     width: 100%;
     height: 10vh;
     text-align: center;
     z-index: 9999;
     display: block;
-
+    box-shadow: 2px 3px 10px #343434;
+    position: relative;
 
 }
 .textHeader{
-    margin-left: -19%;              /*nom/text header*/
+    margin-left: -36%;              /*nom/text header*/
     margin-top: 2vh;
     text-align: center;
     font-size: 250%;
@@ -56,101 +57,15 @@ i .fa-address-card{
 .coté_gauche{
     background-color: #e60012;
     width: 10%;
-    height: 99vh;
+    height: 100vh;
     margin-top: 0;
 }
-/* Slider */
-.img
-{
-    display: inline-block;
-    float: left;
-    background: #2c75ff;
-    margin-left: 10%;
-    margin-top: 100px;
-    width: 70%;
-    height: 100vh;
-    overflow: hidden;
-}
 
-.zoom-out
-{
-    border: 1px solid white;
-    transform: scale(1);
-    transition: .4s ease-in-out;
-}
-
-.zoom-out:hover
-{
-    transform: scale(0.95);
-}
-
-.img-haut-g
-{
-    float: left;
-    width: 50%;
-    height: 50vh;
-}
-
-.img-haut-d
-{
-    float: right;
-    width: 49.4%;
-    height: 50vh;
-}
-
-.img-bas
-{
-    width: 100%;
-    height: 50vh;
-}
-
-figure
-{
-    display: inline-block;
-    margin: 0;
-}
-                                /*** SLIDER romain***/
-
-
-div#slider img
-{
-    border-left: none;
-    border-right: none;
-    width: 20%;
-    height: auto;
-    float: left;
-}
-
-div#slider
-{
-    clear: both;
-    position: relative;
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    left: 0;
-    text-align: left;
-    animation: 20s slidy infinite;
-    height: 100%;
-}
-
-@keyframes slidy
-{
-    0% { left: 0; }
-    20% { left: 0; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    100% { left: -300%; }
-}
-                                /*PICTOGRAMMES fin slider Romain*/
+/*PICTOGRAMMES*/
 
 .fa-plane{                   /*avion*/
     font-size: 8vh;
-    margin-left: 18%;
+    margin-left: 20%;
     margin-top: 6px;
     color:white;
     text-shadow: -3px 2px 0 rgba(171, 0, 20, 0.7);
@@ -159,9 +74,17 @@ div#slider
     transform: rotate(-25deg);
 }
 .fa-laptop{           /*inscription*/
-    font-size: 3vh;
+    font-size: 5vh;
     margin-right: 3%;
     margin-top: 3.3vh;
+    color:white;
+    float: right;
+    display: inline-block;
+}
+.fa-internet-explorer{             /*connection*/
+    font-size: 5vh;
+    margin-top: 3.3vh;
+    margin-right: 3%;
     color:white;
     float: right;
     display: inline-block;
@@ -170,21 +93,10 @@ div#slider
 .C{font-family: 'Montserrat', sans-serif, sans-serif; font-size:1.5vh;color:white;}
 .C:hover{color: rgba(171, 0, 20, 0.7);transition: color 0.5s;}
 
-.fa-internet-explorer:hover{color: rgba(171, 0, 20, 0.7);transition: color 0.7s;}
-.fa-laptop:hover{color: rgba(171, 0, 20, 0.7);transition: color 0.7s;}
+.fa-laptop:hover{transform: rotate(360deg);transition: .8s}
+.fa-internet-explorer:hover{transform: rotate(360deg);transition: .8s}
 
-.fa-internet-explorer{             /*connection*/
-    font-size: 3vh;
-    margin-top: 3.3vh;
-    margin-right: 19%;
-    color:white;
-    float: right;
-    display: inline-block;
-}
-.fa-connectdevelop:active{transform: scale(0.8,0.8);}
-.fa-connectdevelop:hover{color: rgba(171, 0, 20, 0.7);transition: color 0.7s;}
-
-p{text-align: justify;margin: 4%;color: black;font-family: 'Montserrat', sans-serif, sans-serif;}       /*text HOVER*/
+p{text-align: justify;margin: 3%;color: black;font-family: 'Montserrat', sans-serif, sans-serif;}       /*text HOVER*/
 p:hover{color:white;transition: color 0.7s;}
 
 /* (coté droit) ARTICLES*/
@@ -205,18 +117,19 @@ p:hover{color:white;transition: color 0.7s;}
     border-left:4px solid #a1b6cb;}
 
 
-.article1:hover{background-color:#2c75ff ;transition: background-color 0.5s ease-in-out;}
+.article1:hover{background-color: #2c75ff;transition: background-color 0.5s ease-in-out;}
 .article2:hover{background-color:#2c75ff ;transition: background-color 0.5s ease-in-out;}
 .article3:hover{background-color:#2c75ff ;transition: background-color 0.5s ease-in-out;}       /*articles HOVER*/
 
 /* (coté droite) IMAGE ARTICLES*/
+
 #imgArticle1{
     height: 10vh;
     width:16%;
     float: left;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 10px;
-    margin-right: 4%;
+    margin-right: 2%;
     cursor: pointer;
     display: inline-block;
     background-image: url("images/image1.jpg");
@@ -227,9 +140,9 @@ p:hover{color:white;transition: color 0.7s;}
     height: 10vh;
     width: 16%;
     float: left;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 10px;
-    margin-right: 4%;
+    margin-right: 2%;
     cursor: pointer;
     display: inline-block;
     background-image: url("images/image2.jpg");
@@ -240,9 +153,9 @@ p:hover{color:white;transition: color 0.7s;}
     height: 10vh;
     width: 16%;
     float: left;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     margin-left: 10px;
-    margin-right: 4%;
+    margin-right: 2%;
     cursor: pointer;
     display: inline-block;
     background-image: url("images/image3.jpg");
@@ -254,12 +167,7 @@ p:hover{color:white;transition: color 0.7s;}
 #imgArticle3:hover{border: 2px solid white;}
 
 /* IMAGE*/
-.img{
-    display: inline-block;
-    float: left;
-    margin-left: 10%;
-    margin-top: 0;
-    width: 60%;
-    height: 100vh;
-    background-color: #2c75ff;
-}
+#cadreArticle{width:60%;height: 100vh;display: inline-block;background-color: white;float: left;margin-left: 10%;}
+#photoPalmier{width: 50%;display: block;float: left;margin: 40px 20px 10px 50px;border: 5px solid white}
+#textPhotoPalmier{color: black;padding: 20px 20px 20px 20px;line-height: 30px;margin-top: 20px}
+#articlePhotoPalmier{font-size: 220%}
